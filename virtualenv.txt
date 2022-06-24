@@ -1,0 +1,20 @@
+# Crear un entorno virtual
+virtualenv -p python3 env
+
+# Activar el entorno virtual
+.\env\Scripts\activate
+
+# Para ver todo lo que tenemos instalado (ejecutar dentro del entorno virtual)
+pip list
+
+# Ejecutar archivo   
+python ./src/app.py
+
+# Para desactivar el entorno virtual
+deactivate
+
+# Crear archivo con todas las librerias
+pip freeze > requirements.txt
+
+# instalar archivo con todas las librerias
+pip install -r .\requirements.txt
